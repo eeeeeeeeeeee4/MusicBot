@@ -1,12 +1,5 @@
 [phases.setup]
-nixPkgs = ["nodejs_24", "ffmpeg", "python3"]
-
-[phases.install]
-cmds = [
-  "npm ci",
-  "python3 -m ensurepip --upgrade",
-  "python3 -m pip install --user -U yt-dlp"
-]
+nixPkgs = ["nodejs_24", "ffmpeg", "yt-dlp"]
 
 [start]
 cmd = "npm start"

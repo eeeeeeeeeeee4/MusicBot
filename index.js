@@ -128,8 +128,7 @@ async function playNext(guildId) {
 
     const ytdlpPath = process.platform === 'win32'
     ? path.join(__dirname, 'yt-dlp.exe')
-    : 'yt-dlp';
-
+    : '/root/.nix-profile/bin/yt-dlp';
     const ytdlp = spawn(ytdlpPath, [
         '-f', 'bestaudio/best',
         '-o', '-',
