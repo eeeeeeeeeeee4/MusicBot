@@ -1,0 +1,5 @@
+[phases.setup]
+nixPkgs = ["nodejs_24", "ffmpeg", "yt-dlp"]
+
+[start]
+cmd = "npm start"
